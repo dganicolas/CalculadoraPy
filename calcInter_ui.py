@@ -15,19 +15,21 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QFont, QFontDatabase, QGradient, QIcon,
     QImage, QKeySequence, QLinearGradient, QPainter,
     QPalette, QPixmap, QRadialGradient, QTransform)
-from PySide6.QtWidgets import (QAbstractItemView, QAbstractScrollArea, QApplication, QHeaderView,
-    QMainWindow, QPushButton, QSizePolicy, QTableWidget,
-    QTableWidgetItem, QTextEdit, QWidget)
+from PySide6.QtWidgets import (QAbstractItemView, QAbstractScrollArea, QApplication, QFrame,
+    QHeaderView, QMainWindow, QPushButton, QSizePolicy,
+    QTableWidget, QTableWidgetItem, QTextEdit, QWidget)
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
         MainWindow.resize(938, 678)
+        MainWindow.setMinimumSize(QSize(938, 678))
+        MainWindow.setMaximumSize(QSize(938, 678))
         font = QFont()
         font.setPointSize(13)
         MainWindow.setFont(font)
-        MainWindow.setStyleSheet(u"background-color: gray;")
+        MainWindow.setStyleSheet(u"background-color: black;")
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
         self.centralwidget.setAutoFillBackground(False)
@@ -59,7 +61,12 @@ class Ui_MainWindow(object):
 "}")
         self.btn_borrar_ultimo_digito = QPushButton(self.centralwidget)
         self.btn_borrar_ultimo_digito.setObjectName(u"btn_borrar_ultimo_digito")
-        self.btn_borrar_ultimo_digito.setGeometry(QRect(290, 210, 171, 80))
+        self.btn_borrar_ultimo_digito.setGeometry(QRect(290, 210, 161, 80))
+        sizePolicy = QSizePolicy(QSizePolicy.Policy.Fixed, QSizePolicy.Policy.Minimum)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.btn_borrar_ultimo_digito.sizePolicy().hasHeightForWidth())
+        self.btn_borrar_ultimo_digito.setSizePolicy(sizePolicy)
         self.btn_borrar_ultimo_digito.setStyleSheet(u"QPushButton {\n"
 "    font-family: \"Arial\";\n"
 "    font-weight: bold;\n"
@@ -787,8 +794,20 @@ class Ui_MainWindow(object):
 "}\n"
 "")
         self.Cview_registro = QTableWidget(self.centralwidget)
+        if (self.Cview_registro.columnCount() < 2):
+            self.Cview_registro.setColumnCount(2)
+        __qtablewidgetitem = QTableWidgetItem()
+        self.Cview_registro.setHorizontalHeaderItem(0, __qtablewidgetitem)
+        __qtablewidgetitem1 = QTableWidgetItem()
+        self.Cview_registro.setHorizontalHeaderItem(1, __qtablewidgetitem1)
         self.Cview_registro.setObjectName(u"Cview_registro")
-        self.Cview_registro.setGeometry(QRect(560, 50, 351, 581))
+        self.Cview_registro.setGeometry(QRect(560, 50, 341, 581))
+        sizePolicy1 = QSizePolicy(QSizePolicy.Policy.Ignored, QSizePolicy.Policy.Ignored)
+        sizePolicy1.setHorizontalStretch(0)
+        sizePolicy1.setVerticalStretch(0)
+        sizePolicy1.setHeightForWidth(self.Cview_registro.sizePolicy().hasHeightForWidth())
+        self.Cview_registro.setSizePolicy(sizePolicy1)
+        self.Cview_registro.setMaximumSize(QSize(351, 581))
         self.Cview_registro.setStyleSheet(u"QTableWidget {\n"
 "    background-color: #2b2b2b;  /* Fondo oscuro */\n"
 "    color: white;  /* Texto blanco */\n"
@@ -833,11 +852,16 @@ class Ui_MainWindow(object):
 "    border: none;\n"
 "}\n"
 "")
-        self.Cview_registro.setVerticalScrollBarPolicy(Qt.ScrollBarPolicy.ScrollBarAlwaysOn)
-        self.Cview_registro.setHorizontalScrollBarPolicy(Qt.ScrollBarPolicy.ScrollBarAlwaysOn)
-        self.Cview_registro.setSizeAdjustPolicy(QAbstractScrollArea.SizeAdjustPolicy.AdjustToContents)
+        self.Cview_registro.setFrameShape(QFrame.Shape.NoFrame)
+        self.Cview_registro.setFrameShadow(QFrame.Shadow.Raised)
+        self.Cview_registro.setVerticalScrollBarPolicy(Qt.ScrollBarPolicy.ScrollBarAsNeeded)
+        self.Cview_registro.setHorizontalScrollBarPolicy(Qt.ScrollBarPolicy.ScrollBarAsNeeded)
+        self.Cview_registro.setSizeAdjustPolicy(QAbstractScrollArea.SizeAdjustPolicy.AdjustIgnored)
+        self.Cview_registro.setAutoScroll(True)
+        self.Cview_registro.setAutoScrollMargin(16)
         self.Cview_registro.setDragEnabled(False)
-        self.Cview_registro.setVerticalScrollMode(QAbstractItemView.ScrollMode.ScrollPerPixel)
+        self.Cview_registro.setVerticalScrollMode(QAbstractItemView.ScrollMode.ScrollPerItem)
+        self.Cview_registro.horizontalHeader().setVisible(True)
         self.Cview_registro.horizontalHeader().setStretchLastSection(False)
         self.Cview_registro.verticalHeader().setCascadingSectionResizes(False)
         self.Cview_registro.verticalHeader().setProperty(u"showSortIndicator", False)
@@ -881,5 +905,9 @@ class Ui_MainWindow(object):
         self.btn_tangente.setText(QCoreApplication.translate("MainWindow", u"tan", None))
         self.btn_numero_pi.setText(QCoreApplication.translate("MainWindow", u"\u03c0", None))
         self.btn_ans.setText(QCoreApplication.translate("MainWindow", u"ANS", None))
+        ___qtablewidgetitem = self.Cview_registro.horizontalHeaderItem(0)
+        ___qtablewidgetitem.setText(QCoreApplication.translate("MainWindow", u"Operacion", None));
+        ___qtablewidgetitem1 = self.Cview_registro.horizontalHeaderItem(1)
+        ___qtablewidgetitem1.setText(QCoreApplication.translate("MainWindow", u"Resultado", None));
     # retranslateUi
 

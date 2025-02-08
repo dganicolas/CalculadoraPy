@@ -10,6 +10,18 @@
     <height>678</height>
    </rect>
   </property>
+  <property name="minimumSize">
+   <size>
+    <width>938</width>
+    <height>678</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>938</width>
+    <height>678</height>
+   </size>
+  </property>
   <property name="font">
    <font>
     <pointsize>13</pointsize>
@@ -19,7 +31,7 @@
    <string>MainWindow</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: gray;</string>
+   <string notr="true">background-color: black;</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <property name="autoFillBackground">
@@ -70,9 +82,15 @@ QPushButton:pressed {
      <rect>
       <x>290</x>
       <y>210</y>
-      <width>171</width>
+      <width>161</width>
       <height>80</height>
      </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Minimum">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
     </property>
     <property name="styleSheet">
      <string notr="true">QPushButton {
@@ -1156,9 +1174,21 @@ QPushButton:pressed {
      <rect>
       <x>560</x>
       <y>50</y>
-      <width>351</width>
+      <width>341</width>
       <height>581</height>
      </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>351</width>
+      <height>581</height>
+     </size>
     </property>
     <property name="styleSheet">
      <string notr="true">QTableWidget {
@@ -1205,21 +1235,36 @@ QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
 }
 </string>
     </property>
+    <property name="frameShape">
+     <enum>QFrame::Shape::NoFrame</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Shadow::Raised</enum>
+    </property>
     <property name="verticalScrollBarPolicy">
-     <enum>Qt::ScrollBarPolicy::ScrollBarAlwaysOn</enum>
+     <enum>Qt::ScrollBarPolicy::ScrollBarAsNeeded</enum>
     </property>
     <property name="horizontalScrollBarPolicy">
-     <enum>Qt::ScrollBarPolicy::ScrollBarAlwaysOn</enum>
+     <enum>Qt::ScrollBarPolicy::ScrollBarAsNeeded</enum>
     </property>
     <property name="sizeAdjustPolicy">
-     <enum>QAbstractScrollArea::SizeAdjustPolicy::AdjustToContents</enum>
+     <enum>QAbstractScrollArea::SizeAdjustPolicy::AdjustIgnored</enum>
+    </property>
+    <property name="autoScroll">
+     <bool>true</bool>
+    </property>
+    <property name="autoScrollMargin">
+     <number>16</number>
     </property>
     <property name="dragEnabled">
      <bool>false</bool>
     </property>
     <property name="verticalScrollMode">
-     <enum>QAbstractItemView::ScrollMode::ScrollPerPixel</enum>
+     <enum>QAbstractItemView::ScrollMode::ScrollPerItem</enum>
     </property>
+    <attribute name="horizontalHeaderVisible">
+     <bool>true</bool>
+    </attribute>
     <attribute name="horizontalHeaderStretchLastSection">
      <bool>false</bool>
     </attribute>
@@ -1232,6 +1277,16 @@ QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
     <attribute name="verticalHeaderStretchLastSection">
      <bool>true</bool>
     </attribute>
+    <column>
+     <property name="text">
+      <string>Operacion</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Resultado</string>
+     </property>
+    </column>
    </widget>
   </widget>
  </widget>
