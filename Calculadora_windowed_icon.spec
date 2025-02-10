@@ -5,7 +5,7 @@ a = Analysis(
     ['principal.py'],
     pathex=[],
     binaries=[],
-    datas=[('Calculator_30001.ico', '.')],
+    datas=[('_internal\\calculator_30001.ico', '.'), ('_internal\\calcInter.ui', '.')],
     hiddenimports=[],
     hookspath=[],
     hooksconfig={},
@@ -32,7 +32,7 @@ exe = EXE(
     target_arch=None,
     codesign_identity=None,
     entitlements_file=None,
-    icon=['Calculator_30001.ico'],
+    icon=['_internal\\Calculator_30001.ico'],
 )
 coll = COLLECT(
     exe,

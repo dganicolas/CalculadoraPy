@@ -1,0 +1,1295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>938</width>
+    <height>678</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>938</width>
+    <height>678</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>938</width>
+    <height>678</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>13</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: black;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <widget class="QPushButton" name="btn_borrar_todo">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>210</y>
+      <width>81</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    font-family: &quot;Arial&quot;;
+    font-weight: bold;
+    font-size: 28px;
+    border-radius: 40px;
+    min-width: 80px;
+    min-height: 80px;
+    border: none;
+}
+
+QPushButton {
+    background-color: #A5A5A5;
+    color: black;
+}
+
+QPushButton:hover {
+    background-color: #BFBFBF;
+}
+
+QPushButton:pressed {
+    background-color: #D4D4D2;
+}</string>
+    </property>
+    <property name="text">
+     <string>C</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_borrar_ultimo_digito">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>210</y>
+      <width>161</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Minimum">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    font-family: &quot;Arial&quot;;
+    font-weight: bold;
+    font-size: 28px;
+    border-radius: 40px;
+    min-width: 80px;
+    min-height: 80px;
+    border: none;
+}
+
+QPushButton {
+    background-color: #A5A5A5;
+    color: black;
+}
+
+QPushButton:hover {
+    background-color: #BFBFBF;
+}
+
+QPushButton:pressed {
+    background-color: #D4D4D2;
+}</string>
+    </property>
+    <property name="text">
+     <string>CE</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_n9">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>300</y>
+      <width>80</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    font-family: &quot;Arial&quot;;
+    font-weight: bold;
+    font-size: 28px;
+    border-radius: 40px;
+    min-width: 80px;
+    min-height: 80px;
+    border: none;
+}
+
+QPushButton {
+    background-color: #333333;
+    color: white;
+}
+
+QPushButton:hover {
+    background-color: #4D4D4D;
+}
+
+QPushButton:pressed {
+    background-color: #666666;
+}</string>
+    </property>
+    <property name="text">
+     <string>9</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_n8">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>300</y>
+      <width>80</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    font-family: &quot;Arial&quot;;
+    font-weight: bold;
+    font-size: 28px;
+    border-radius: 40px;
+    min-width: 80px;
+    min-height: 80px;
+    border: none;
+}
+
+QPushButton {
+    background-color: #333333;
+    color: white;
+}
+
+QPushButton:hover {
+    background-color: #4D4D4D;
+}
+
+QPushButton:pressed {
+    background-color: #666666;
+}</string>
+    </property>
+    <property name="text">
+     <string>8</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_n7">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>300</y>
+      <width>80</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    font-family: &quot;Arial&quot;;
+    font-weight: bold;
+    font-size: 28px;
+    border-radius: 40px;
+    min-width: 80px;
+    min-height: 80px;
+    border: none;
+}
+
+QPushButton {
+    background-color: #333333;
+    color: white;
+}
+
+QPushButton:hover {
+    background-color: #4D4D4D;
+}
+
+QPushButton:pressed {
+    background-color: #666666;
+}</string>
+    </property>
+    <property name="text">
+     <string>7</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_dividir">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>210</y>
+      <width>80</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    font-family: &quot;Arial&quot;; /* Usa una fuente integrada en el sistema */
+    font-weight: bold;
+    font-size: 28px;
+    border-radius: 40px;
+    min-width: 80px;
+    min-height: 80px;
+    border: none;
+}
+
+QPushButton {
+    background-color: #FF9500;
+    color: white;
+}
+
+QPushButton:hover {
+    background-color: #FFB04C;
+}
+
+QPushButton:pressed {
+    background-color: #CC7600;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>/</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_n6">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>390</y>
+      <width>80</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    font-family: &quot;Arial&quot;;
+    font-weight: bold;
+    font-size: 28px;
+    border-radius: 40px;
+    min-width: 80px;
+    min-height: 80px;
+    border: none;
+}
+
+QPushButton {
+    background-color: #333333;
+    color: white;
+}
+
+QPushButton:hover {
+    background-color: #4D4D4D;
+}
+
+QPushButton:pressed {
+    background-color: #666666;
+}</string>
+    </property>
+    <property name="text">
+     <string>6</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_n5">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>390</y>
+      <width>80</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    font-family: &quot;Arial&quot;;
+    font-weight: bold;
+    font-size: 28px;
+    border-radius: 40px;
+    min-width: 80px;
+    min-height: 80px;
+    border: none;
+}
+
+QPushButton {
+    background-color: #333333;
+    color: white;
+}
+
+QPushButton:hover {
+    background-color: #4D4D4D;
+}
+
+QPushButton:pressed {
+    background-color: #666666;
+}</string>
+    </property>
+    <property name="text">
+     <string>5</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_n4">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>390</y>
+      <width>80</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    font-family: &quot;Arial&quot;;
+    font-weight: bold;
+    font-size: 28px;
+    border-radius: 40px;
+    min-width: 80px;
+    min-height: 80px;
+    border: none;
+}
+
+QPushButton {
+    background-color: #333333;
+    color: white;
+}
+
+QPushButton:hover {
+    background-color: #4D4D4D;
+}
+
+QPushButton:pressed {
+    background-color: #666666;
+}</string>
+    </property>
+    <property name="text">
+     <string>4</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_multiplicar">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>300</y>
+      <width>80</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    font-family: &quot;Arial&quot;; /* Usa una fuente integrada en el sistema */
+    font-weight: bold;
+    font-size: 28px;
+    border-radius: 40px;
+    min-width: 80px;
+    min-height: 80px;
+    border: none;
+}
+
+QPushButton {
+    background-color: #FF9500;
+    color: white;
+}
+
+QPushButton:hover {
+    background-color: #FFB04C;
+}
+
+QPushButton:pressed {
+    background-color: #CC7600;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>X</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_n3">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>480</y>
+      <width>80</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    font-family: &quot;Arial&quot;;
+    font-weight: bold;
+    font-size: 28px;
+    border-radius: 40px;
+    min-width: 80px;
+    min-height: 80px;
+    border: none;
+}
+
+QPushButton {
+    background-color: #333333;
+    color: white;
+}
+
+QPushButton:hover {
+    background-color: #4D4D4D;
+}
+
+QPushButton:pressed {
+    background-color: #666666;
+}</string>
+    </property>
+    <property name="text">
+     <string>3</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_n2">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>480</y>
+      <width>80</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    font-family: &quot;Arial&quot;;
+    font-weight: bold;
+    font-size: 28px;
+    border-radius: 40px;
+    min-width: 80px;
+    min-height: 80px;
+    border: none;
+}
+
+QPushButton {
+    background-color: #333333;
+    color: white;
+}
+
+QPushButton:hover {
+    background-color: #4D4D4D;
+}
+
+QPushButton:pressed {
+    background-color: #666666;
+}</string>
+    </property>
+    <property name="text">
+     <string>2</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_n1">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>480</y>
+      <width>80</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    font-family: &quot;Arial&quot;;
+    font-weight: bold;
+    font-size: 28px;
+    border-radius: 40px;
+    min-width: 80px;
+    min-height: 80px;
+    border: none;
+}
+
+QPushButton {
+    background-color: #333333;
+    color: white;
+}
+
+QPushButton:hover {
+    background-color: #4D4D4D;
+}
+
+QPushButton:pressed {
+    background-color: #666666;
+}</string>
+    </property>
+    <property name="text">
+     <string>1</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_restar">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>390</y>
+      <width>80</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    font-family: &quot;Arial&quot;; /* Usa una fuente integrada en el sistema */
+    font-weight: bold;
+    font-size: 28px;
+    border-radius: 40px;
+    min-width: 80px;
+    min-height: 80px;
+    border: none;
+}
+
+QPushButton {
+    background-color: #FF9500;
+    color: white;
+}
+
+QPushButton:hover {
+    background-color: #FFB04C;
+}
+
+QPushButton:pressed {
+    background-color: #CC7600;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>-</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_punto">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>570</y>
+      <width>80</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    font-family: &quot;Arial&quot;;
+    font-weight: bold;
+    font-size: 28px;
+    border-radius: 40px;
+    min-width: 80px;
+    min-height: 80px;
+    border: none;
+}
+
+QPushButton {
+    background-color: #333333;
+    color: white;
+}
+
+QPushButton:hover {
+    background-color: #4D4D4D;
+}
+
+QPushButton:pressed {
+    background-color: #666666;
+}</string>
+    </property>
+    <property name="text">
+     <string>.</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_n0">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>570</y>
+      <width>80</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    font-family: &quot;Arial&quot;;
+    font-weight: bold;
+    font-size: 28px;
+    border-radius: 40px;
+    min-width: 80px;
+    min-height: 80px;
+    border: none;
+}
+
+QPushButton {
+    background-color: #333333;
+    color: white;
+}
+
+QPushButton:hover {
+    background-color: #4D4D4D;
+}
+
+QPushButton:pressed {
+    background-color: #666666;
+}</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_sumar">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>480</y>
+      <width>80</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    font-family: &quot;Arial&quot;; /* Usa una fuente integrada en el sistema */
+    font-weight: bold;
+    font-size: 28px;
+    border-radius: 40px;
+    min-width: 80px;
+    min-height: 80px;
+    border: none;
+}
+
+QPushButton {
+    background-color: #FF9500;
+    color: white;
+}
+
+QPushButton:hover {
+    background-color: #FFB04C;
+}
+
+QPushButton:pressed {
+    background-color: #CC7600;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>+</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_exponente">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>300</y>
+      <width>80</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    font-family: &quot;Arial&quot;;
+    font-weight: bold;
+    font-size: 28px;
+    border-radius: 40px;
+    min-width: 80px;
+    min-height: 80px;
+    border: none;
+}
+
+QPushButton {
+    background-color: #FF9500;
+    color: white;
+}
+
+QPushButton:hover {
+    background-color: #FFB04C;
+}
+
+QPushButton:pressed {
+    background-color: #CC7600;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>^ </string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="editText_pantalla">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>53</y>
+      <width>511</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>-1</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QTextEdit {
+    background-color: #2b2b2b;  /* Fondo oscuro */
+    color: white;  /* Texto blanco */
+    font-family: &quot;Arial&quot;;  
+    font-size: 48px;  
+    font-weight: bold;
+    border: 2px solid #555;  /* Borde similar a la tabla */
+    padding: 10px;
+    selection-background-color: #4CAF50;  /* Resaltar texto seleccionado */
+    selection-color: white;
+}</string>
+    </property>
+    <property name="undoRedoEnabled">
+     <bool>true</bool>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+    <property name="placeholderText">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_raiz">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>390</y>
+      <width>80</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    font-weight: black;
+    font-size: 28px;
+    border-radius: 40px;
+    min-width: 80px;
+    min-height: 80px;
+    border: none;
+}
+
+QPushButton {
+    background-color: #FF9500;
+    color: white;
+}
+
+QPushButton:hover {
+    background-color: #FFB04C;
+}
+
+QPushButton:pressed {
+    background-color: #CC7600;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>√</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_seno">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>210</y>
+      <width>80</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    font-weight: black;
+    font-size: 28px;
+    border-radius: 40px;
+    min-width: 80px;
+    min-height: 80px;
+    border: none;
+}
+
+QPushButton {
+    background-color: #FF9500;
+    color: white;
+}
+
+QPushButton:hover {
+    background-color: #FFB04C;
+}
+
+QPushButton:pressed {
+    background-color: #CC7600;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>sin</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_coseno">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>300</y>
+      <width>80</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    font-weight: black;
+    font-size: 28px;
+    border-radius: 40px;
+    min-width: 80px;
+    min-height: 80px;
+    border: none;
+}
+
+QPushButton {
+    background-color: #FF9500;
+    color: white;
+}
+
+QPushButton:hover {
+    background-color: #FFB04C;
+}
+
+QPushButton:pressed {
+    background-color: #CC7600;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>cos</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_factorial">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>480</y>
+      <width>80</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    font-weight: black;
+    font-size: 28px;
+    border-radius: 40px;
+    min-width: 80px;
+    min-height: 80px;
+    border: none;
+}
+
+QPushButton {
+    background-color: #FF9500;
+    color: white;
+}
+
+QPushButton:hover {
+    background-color: #FFB04C;
+}
+
+QPushButton:pressed {
+    background-color: #CC7600;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>!</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_n00">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>570</y>
+      <width>80</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    font-family: &quot;Arial&quot;;
+    font-weight: bold;
+    font-size: 28px;
+    border-radius: 40px;
+    min-width: 80px;
+    min-height: 80px;
+    border: none;
+}
+
+QPushButton {
+    background-color: #333333;
+    color: white;
+}
+
+QPushButton:hover {
+    background-color: #4D4D4D;
+}
+
+QPushButton:pressed {
+    background-color: #666666;
+}</string>
+    </property>
+    <property name="text">
+     <string>00</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_igual">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>570</y>
+      <width>80</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    font-family: &quot;Arial&quot;;
+    font-weight: bold;
+    font-size: 28px;
+    border-radius: 40px;
+    min-width: 80px;
+    min-height: 80px;
+    border: none;
+}
+
+QPushButton {
+    background-color: #FF9500;
+    color: white;
+}
+
+QPushButton:hover {
+    background-color: #FFB04C;
+}
+
+QPushButton:pressed {
+    background-color: #CC7600;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>=</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_parentesis_cerrar">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>570</y>
+      <width>80</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    font-weight: black;
+    font-size: 28px;
+    border-radius: 40px;
+    min-width: 80px;
+    min-height: 80px;
+    border: none;
+}
+
+QPushButton {
+    background-color: #FF9500;
+    color: white;
+}
+
+QPushButton:hover {
+    background-color: #FFB04C;
+}
+
+QPushButton:pressed {
+    background-color: #CC7600;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>)</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_parentesis_abrir">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>570</y>
+      <width>80</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    font-weight: black;
+    font-size: 28px;
+    border-radius: 40px;
+    min-width: 80px;
+    min-height: 80px;
+    border: none;
+}
+
+QPushButton {
+    background-color: #FF9500;
+    color: white;
+}
+
+QPushButton:hover {
+    background-color: #FFB04C;
+}
+
+QPushButton:pressed {
+    background-color: #CC7600;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>(</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_tangente">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>390</y>
+      <width>80</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    font-family: &quot;Arial&quot;;
+    font-weight: bold;
+    font-size: 28px;
+    border-radius: 40px;
+    min-width: 80px;
+    min-height: 80px;
+    border: none;
+}
+
+QPushButton {
+    background-color: #FF9500;
+    color: white;
+}
+
+QPushButton:hover {
+    background-color: #FFB04C;
+}
+
+QPushButton:pressed {
+    background-color: #CC7600;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>tan</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_numero_pi">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>480</y>
+      <width>80</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    font-family: &quot;Arial&quot;;
+    font-weight: bold;
+    font-size: 28px;
+    border-radius: 40px;
+    min-width: 80px;
+    min-height: 80px;
+    border: none;
+}
+
+QPushButton {
+    background-color: #FF9500;
+    color: white;
+}
+
+QPushButton:hover {
+    background-color: #FFB04C;
+}
+
+QPushButton:pressed {
+    background-color: #CC7600;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>π</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_ans">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>210</y>
+      <width>80</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    font-weight: black;
+    font-size: 28px;
+    border-radius: 40px;
+    min-width: 80px;
+    min-height: 80px;
+    border: none;
+}
+
+QPushButton {
+    background-color: #FF9500;
+    color: white;
+}
+
+QPushButton:hover {
+    background-color: #FFB04C;
+}
+
+QPushButton:pressed {
+    background-color: #CC7600;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>ANS</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="Cview_registro">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>50</y>
+      <width>341</width>
+      <height>581</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>351</width>
+      <height>581</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QTableWidget {
+    background-color: #2b2b2b;  /* Fondo oscuro */
+    color: white;  /* Texto blanco */
+    gridline-color: #555;  /* Líneas de la tabla */
+    font-size: 15px;
+    selection-background-color: #4CAF50; /* Fondo de selección */
+    selection-color: white; /* Color del texto seleccionado */
+    border: 2px solid #555;  /* Borde alrededor de la tabla */
+}
+
+QHeaderView::section {
+    background-color: #444;  /* Fondo de los encabezados */
+    color: white;
+    padding: 5px;
+    border: 1px solid #666;
+    font-weight: bold;
+}
+
+QTableWidget::item {
+    padding: 8px;
+}
+
+QTableWidget::item:selected {
+    background-color: #4CAF50; /* Color de selección */
+    color: white;
+}
+
+QScrollBar:vertical {
+    border: none;
+    background: #333;
+    width: 10px;
+}
+
+QScrollBar::handle:vertical {
+    background: #555;
+    min-height: 20px;
+}
+
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    background: none;
+    border: none;
+}
+</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Shape::NoFrame</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Shadow::Raised</enum>
+    </property>
+    <property name="verticalScrollBarPolicy">
+     <enum>Qt::ScrollBarPolicy::ScrollBarAsNeeded</enum>
+    </property>
+    <property name="horizontalScrollBarPolicy">
+     <enum>Qt::ScrollBarPolicy::ScrollBarAsNeeded</enum>
+    </property>
+    <property name="sizeAdjustPolicy">
+     <enum>QAbstractScrollArea::SizeAdjustPolicy::AdjustIgnored</enum>
+    </property>
+    <property name="autoScroll">
+     <bool>true</bool>
+    </property>
+    <property name="autoScrollMargin">
+     <number>16</number>
+    </property>
+    <property name="dragEnabled">
+     <bool>false</bool>
+    </property>
+    <property name="verticalScrollMode">
+     <enum>QAbstractItemView::ScrollMode::ScrollPerItem</enum>
+    </property>
+    <attribute name="horizontalHeaderVisible">
+     <bool>true</bool>
+    </attribute>
+    <attribute name="horizontalHeaderStretchLastSection">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="verticalHeaderCascadingSectionResizes">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="verticalHeaderShowSortIndicator" stdset="0">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="verticalHeaderStretchLastSection">
+     <bool>true</bool>
+    </attribute>
+    <column>
+     <property name="text">
+      <string>Operacion</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Resultado</string>
+     </property>
+    </column>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -13,17 +13,19 @@ pyinstaller ---> el instalador encargado a empaquetar el proyecto
 --name "Calculadora_windowed_icon" ---> comando para cambiar el nombre del ejecutable
 --icon=Calculator_30001.ico --->  comando para cambiar el icono del ejecutable
 --add-data="calculator_30001.ico;." --->  principal.py comando para anadir el icono al ejecutable
+principal.py ---> nombre del archivo principal
 
-EN CASO DE ERROR IR A ESTA DIRECCION:
+EN CASO DE ERROR IR A ESTA DIRECCION: 
+https://github.com/dganicolas/CalculadoraPy
 """
 
 
 class pantalla(QMainWindow):   # Se crea una clase por ventana
     def __init__(self): 
         super(pantalla, self).__init__() # Reservamos un espacio en memoria para la clase
-        self.setWindowIcon(QIcon('C:/Users/nicol/Documents/2DAM/DIN/CalculadoraPy/Calculator_30001.ico'))
+        self.setWindowIcon(QIcon('_internal\Calculator_30001.ico'))
         self.setWindowTitle("Calculadora") # Nombre de la Ventana al abrir la aplicación
-        uic.loadUi('C:/Users/nicol/Documents/2DAM/DIN/CalculadoraPy/calcInter.ui', self)  # Cargamos la interfaz de Designe
+        uic.loadUi(os.path.abspath('_internal\calcInter.ui'), self)  # Cargamos la interfaz de Designe
         self.pantalla_texto = ""
         self.ans = "0"
         self.refrescar_pantalla()
